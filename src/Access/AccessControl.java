@@ -21,7 +21,7 @@ public class AccessControl {
         accessUser(userId).libraryOptions();
     }
 
-    public Persone accessUser(int userId) {
+    private Persone accessUser(int userId) {
         Persone persone = null;
         switch (userId) {
             case 1:

@@ -40,7 +40,7 @@ public class User extends Persone implements Registeration, Login {
         this.password = password;
     }
 
-    public void userOptions() {
+    private void userOptions() {
         System.out.println("enter your choise");
         System.out.println("1- rate movie");
         System.out.println("2- search movie by title");
@@ -68,7 +68,7 @@ public class User extends Persone implements Registeration, Login {
     }
 
     @Override
-    public void libraryOptions() {
+    protected void libraryOptions() {
 
         register();
         if (login() == true) {

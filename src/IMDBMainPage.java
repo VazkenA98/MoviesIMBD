@@ -34,7 +34,7 @@ public class IMDBMainPage {
         }
     }
 
-    public int menu() {
+    private int menu() {
         System.out.println("please enter following number");
         System.out.println("1- see all movies");
         System.out.println("2- login or create acount");
@@ -43,11 +43,11 @@ public class IMDBMainPage {
         return choise;
     }
 
-    public void imdbAccountPage() {
+    private void imdbAccountPage() {
         ac.connect();
     }
 
-    public void getIMDBMovies() {
+    private void getIMDBMovies() {
         movies.getAllMovies();
     }
 }

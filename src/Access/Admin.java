@@ -36,7 +36,7 @@ public class Admin extends Persone implements Login {
         this.password = password;
     }
 
-    public Boolean addAgain() {
+    private Boolean addAgain() {
         boolean addAgain = true;
         System.out.println("wanna add other one ?");
         System.out.println("enter yes if so");
@@ -51,7 +51,7 @@ public class Admin extends Persone implements Login {
     }
 
     @Override
-    public void libraryOptions() {
+    protected void libraryOptions() {
 
         if (login() == true) {
             do {

@@ -28,5 +28,5 @@ public abstract class Persone {
         this.id = id;
     }
 
-    public abstract void libraryOptions();
+    protected abstract void libraryOptions();
 }
